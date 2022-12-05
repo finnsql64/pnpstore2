@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --color-primary:#463F57;
+}
+:root
+{
+   
+    --box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+:root
+{
+    --color-background: whitesmoke;
+}
+
+body
+{
+    background: url('/imgs/bg/pnp_store_bg.jpg') top center / cover no-repeat ; 
+    font-family: 'Poppins' , sans-serif;
+}
+/* =============== Begin: Main ===============  */
+#pnp-main
+{
+   
+}
+/* =============== End: Main ===============  */
+
+/* =============== Begin: Header ===============  */
+
+#pnp-header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.pnp__header-top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    background: #ccc;
+    position: relative;
+    
+}
+.pnp__header-top .pnp__logo
+{
+    
+}
+
+.pnp__header-top .pnp__logo .pnp__logo-img
+{
+    width: 40px;
+    margin-top: 4px;
+}
+
+.pnp__logo .pnp-text-logo
+{
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-right: 50px;
+    color: #7461a1;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.search__container .search__text
+{
+    padding: 8px;
+    outline: none;
+    width: 350px;
+}
+
+.search__container .btn__search
+{
+    padding: 8px;
+    margin-left: -5px;
+    background:  var(--color-primary);
+    color: whitesmoke;
+    outline: none;
+}
+
+.search__container .btn__search:hover
+{
+    background: whitesmoke;
+    color: var(--color-primary);
+}
+
+.pnp__header-top .log__sign button
+{
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--color-primary);
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pnp__header-top .log__sign button:hover
+{
+    background: whitesmoke;
+    color: var(--color-primary);
+}
+.pnp__header-top .cart
+{
+    font-size: 20px;
+    background: var(--color-primary);
+    padding: 4px 8px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.pnp__header-top .cart:hover
+{
+    background: whitesmoke;
+    color: var(--color-primary);
+}
+
+.pnp__header-menu
+{
+    height: 40px;
+    background: var(--color-primary);
+}
+.pnp__header-menu .nav 
+{
+    
+}
+
+.pnp__header-menu .nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    list-style: none;
+    position: relative;
+    
+}
+
+.nav li:hover .subnav_cellphone,
+.nav li:hover .subnav_laptop,
+.nav li:hover .subnav_apple
+
+{
+    display: block;
+}
+.nav > li > a
+{
+    color: whitesmoke;
+    display: block;
+}
+.nav  li  a
+{
+    padding: 0 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    display: block;
+}
+
+.nav > li:hover > a,
+.nav  .subnav_cellphone  li:hover a,
+.nav .subnav_laptop li:hover a,
+.nav .subnav_apple li:hover a
+{
+    background: whitesmoke;
+    color: var(--color-primary);
+}
+
+/* ---------------- cell phone--------------------------- */
+.nav .subnav_cellphone
+{
+    display: none;
+    background: var(--color-primary);
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    width: 129px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.nav .subnav_cellphone li a,
+.nav .subnav_laptop li a,
+.nav .subnav_apple li a
+{
+    text-align: center;
+    text-decoration: none;
+    padding-left: 20px;
+    color: whitesmoke;
+    font-size: 16px;
+    
+}
+/* ---------------- cell phone--------------------------- */
+/* ---------------- laptop--------------------------- */
+.nav .subnav_laptop
+{
+    display: none;
+    background: var(--color-primary);
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    width: 98px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+
+/* ---------------- laptop--------------------------- */
+/* ---------------- Apple--------------------------- */
+.nav .subnav_apple
+{
+    display: none;
+    background: var(--color-primary);
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    width: 160px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+/* ---------------- Apple--------------------------- */
+
+
+
+/* =============== End: Header ===============  */
+
+/* =============== Begin: Slider ===============  */
+#pnp-slider
+{
+    /* padding-top: 50%;
+    background: url('/imgs/slider/slider1-pnp.jpg') top center/ cover no-repeat; */
+}
+/* =============== End: Slider ===============  */
+
+/* =============== Begin: Content ===============  */
+#pnp-content
+{
+    /* margin: 0 auto; */
+}
+#pnp-content .banner-sale-container
+{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 1100px;
+    height: 380px;
+    background: whitesmoke;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.sale-container
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 8px;
+}
+.banner-sale-container .banner-sale-ip
+{
+    width: 800px;
+}
+.banner-sale-container .banner-sale-col
+{
+    
+    width: 300px; 
+}
+
+.banner-sale-container .endow
+{
+    width: 800px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;  
+    list-style: none;
+    padding: 10px;
+}
+.banner-sale-container .endow li a
+{
+   display: inline-block;
+   text-decoration: none;
+   font-size: 15px;
+   color: black;
+   font-weight: bold;
+   padding: 0 10px;
+   transition: 0.5s;
+}
+.active
+{
+    border-bottom: 2px solid red;
+}
+.banner-sale-container .endow li:hover a
+{
+    border-bottom: 2px solid red;
+    transform: scale(0.9);
+}
+.banner-sale-container
+{
+    position: relative;
+    z-index: 1;
+}
+ .infor-lhight
+ {
+    position: absolute;
+    bottom: 17px;
+    right: 5px;
+    width: 300px;
+     
+ }
+
+ .infor-lhight a
+ {
+    text-decoration: none;
+    font-size: 15px;
+ }
+ .header-infor-lhight a:hover
+ {
+    text-decoration: 2px underline gray;
+    /* transform: ; */
+ }
+
+ .infor-lhight p
+ {
+    color: black;
+    font-weight: bold;
+ }
+.header-infor-lhight 
+{
+    
+    color: black;
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.body-infor-items .xiaomi
+{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+.body-infor-items .xiaomi img
+{
+    margin-right:15px;
+    border-radius: 15px ;
+}
+.body-infor-items .xiaomi img:hover
+{
+    border: 1px solid orangered;
+}
+.body-infor-items .oppo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    cursor: pointer;
+
+}
+.body-infor-items .oppo img
+{
+    margin-right: 15px;
+    border-radius: 15px ;
+}
+.body-infor-items .oppo img:hover
+{
+    border: 1px solid orangered;
+}
+
+/* =========== Begin: Box =============*/
+.box-container
+{
+    background: white;
+    width: 1100px;
+    height: 300px;
+    margin-top: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+
+.box-container .box-item
+{
+    width: 183px;
+    height: 150px;
+    background: white;
+    text-align: center;
+    /* border: 1px solid gray; */
+    padding: 15px;
+    border-right: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    cursor: pointer;
+}
+.box-container .box-item:hover
+{
+    border-color: rgba(0,0,0,.12);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+    transition: all .1s ease-in;
+
+}
+.box-container .box-item p
+{
+    margin-top: 20px;
+}
+
+.box-container .box-item p
+{
+    color: var(--color-primary);
+}
+
+
+/* =========== End: Box =============*/
+
+/* ------------- Sản Phẩm --------------------- */
+.content-section 
+{
+    
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1100px;
+    height: 520px;
+    background: whitesmoke;
+    text-align: center;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    
+}
+
+.content-section .section-heading 
+{ 
+    
+    color: #463F57;
+    padding-top: 20px;
+    
+}
+.content-section .items img
+{
+    width: 300px;
+    padding: 20px 40px;
+}
+.content-section .buy-quickly
+{
+    padding: 15px 40px;
+    border-radius: 20px;
+    background: #B348D2;
+    color: whitesmoke;
+    border: unset;
+    font-size: 20px;
+}
+.content-section .buy-quickly:hover
+{
+    background: #463f57;
+}
+.content-section p
+{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.content-section p a:hover
+{
+    color: #bf32db;
+}
+
+.content-section .container-items
+{
+    padding: 20px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.content-section .container-items .about-item
+{
+    width: 250px;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 10px;
+
+
+}
+
+
+
+.container-items .about-item img
+{
+    width: 180px;
+    height: 200px;
+}
+.container-items .about-item  .item-name
+{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+.container-items .about-item  .parameter 
+{
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    margin-top: 8px;
+    margin-right:10px ;
+    
+}
+.container-items .about-item  .parameter span
+{
+    
+    padding: 2px 6px;
+    background: #ccc;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 15px;
+    
+}
+
+.container-items .about-item  .parameter span:hover 
+{
+    background: var(--color-primary);
+}
+.container-items .about-item  .parameter .active-para
+{
+    background: var(--color-primary);
+}
+.container-items .about-item .price
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: red;
+    color: whitesmoke;
+    padding: 2px 2px  4px;
+    line-height: 8px;
+    border-radius: 15px;
+    width: 120px;
+    margin-top: 8px;
+}
+.container-items .about-item .price p
+{
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.container-items .about-item .price a
+{
+    color: whitesmoke;
+}
+.container-items .about-item .cart
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container-items .about-item .cart button
+{
+    
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 10px;
+    border: unset;
+    background: #7461a1;
+    transition: 0.6s;
+}
+.container-items .about-item .cart button:hover
+{
+    background: whitesmoke;
+    color: #463F57;
+}
+
+/* ------ Begin: Sell Product ------   Sản phẩm bán */ 
+.product-container
+{
+    background: whitesmoke;
+    width: 1300px;
+    margin: 20px auto;
+    box-shadow: var(--box-shadow);
+    padding: 15px;
+    border-radius: 10px;  
+}
+.product-container .heading-product
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-container .items-product
+{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.product-container .items-product .item
+{
+    width: 280px;
+    height: 510px;
+    padding: 9px;
+    background: var(--color-background);
+    /* border: 1px solid #7461a1; */
+    overflow: hidden; 
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(202, 124, 212, 0.2), 0 4px 20px 0 rgba(194, 18, 218, 0.19);
+    transition: 0.3s ;
+    
+}
+.product-container .items-product .item:hover
+{
+    box-shadow: 0 4px 10px 0 rgba(190, 5, 214, 0.911), 0 4px 20px 0 rgba(238, 70, 4, 0.19);
+    transform:  translateY(-8px);
+}
+.product-container .items-product .item h4
+{
+    font-size: 14px;
+}
+
+.product-container .items-product .price-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.product-container .items-product .price-item .price-present
+{
+    background: red;
+    border-radius: 10px;
+    padding: 0 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.6s;
+}
+.product-container .items-product .price-item .price-present a
+{
+    color: white;
+}
+.product-container .items-product .price-item .price-present:hover
+{
+    background: #7461a1;
+    color: white;
+}
+.product-container .items-product .price-item .price-past
+{
+    text-decoration: line-through;
+    opacity: 0.6;
+    font-size: 13px;
+}
+.product-container .items-product .info-item
+{
+    background: #cacfd4;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.product-container .items-product .info-item p
+{
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 0.8;
+}
+.product-container .items-product .info-item .pay-item img
+{
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-right: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.product-container .items-product .info-item .pay-item img:hover
+{
+    transform: scale(0.5);
+    border: 1px solid #B348D2;
+    transition-delay: 0.9;
+    
+}
+.product-container .items-product .buy-item
+{
+    margin-top: 10px;
+    
+}
+.product-container .items-product .buy-item button
+{
+    width: 121px;
+    padding: 10px 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    color:whitesmoke ;
+    font-weight: 500;
+    background: #7461a1;
+    border: unset;  
+    border-radius: 5px; 
+    transition: 0.6s;
+    cursor: pointer;
+}
+.product-container .items-product .buy-item button:hover
+{
+    background: whitesmoke;
+    color: #463F57;
+    font-weight: 600;
+    border:1px solid #7461a1;
+}
+
+/* ------ End: Sell Product ------   Sản phẩm bán */ 
+
+/* -------------------Banner- Apple watch -------------- */
+.apple-watch-container
+{
+    width: 100%;
+    background: #111111;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #B348D2;
+    padding: 20px;
+}
+.apple-watch-container h3
+{
+    font-size: 40px;
+}
+.apple-watch-container img
+{
+   
+    text-align: center;
+    width: 100%;
+}
+.apple-watch-container p
+{
+    margin-bottom: 20px;
+}
+.apple-watch-container .font
+{
+    text-align: center;
+}
+.apple-watch-container h2
+{
+    font-size: 100px;
+    color: #463F57;
+}
+.apple-watch-size
+{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius:10px ;
+}
+.apple-watch-size span
+{
+    margin-right: 10px;
+    background: gray;
+    padding: 0 44px;
+    margin-right: 0px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.apple-watch-size span:hover
+{
+    background: #111111;
+    color: whitesmoke;
+}
+/* -------------------Banner- Apple watch --------------*/
+
+
+
+/* ------------- Sản Phẩm --------------------- */
+
+/* =============== End: Content ===============  */
+
+/* =============== Begin: footer ===============  */
+#pnp-footer
+{
+    width: 100%;
+    height: 350px;
+    background: #463F57;
+    
+}
+#pnp-footer .footer-container
+{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#pnp-footer .footer-container ul
+{
+    list-style: none;
+    
+}
+#pnp-footer .footer-container .footer-intro ul li a
+{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #B348D2;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.6s;
+    text-decoration: none;
+}
+#pnp-footer .footer-container .footer-intro ul li a:hover
+{
+    color: #B348D2;
+}
+#pnp-footer .footer-container .footer-intro ul li 
+{
+    margin-top: 10px;
+}
+#pnp-footer .footer-container .footer-info-sale ul li a
+{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #B348D2;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.6s;
+    text-decoration: none;
+}
+#pnp-footer .footer-container .footer-info-sale ul li a:hover
+{
+    color: #B348D2;
+}
+#pnp-footer .footer-container .footer-info-sale ul li
+{
+    margin-top: 10px;
+}
+#pnp-footer .footer-container .footer-founder h4
+{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #B348D2;
+}
+#pnp-footer .footer-container .footer-founder ul li 
+{
+    margin-top: 10px;
+    color: rgb(54, 233, 224);
+    text-shadow: 1px 1px 2px #B348D2;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#pnp-footer .footer-container .footer-founder ul li:hover
+{
+    color: #B348D2;
+
+}
+#pnp-footer .footer-container .footer-contact h4
+{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #B348D2;
+}
+#pnp-footer .footer-container .footer-contact li 
+{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #B348D2;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#pnp-footer .footer-container .footer-contact p
+{
+    color: aqua;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#pnp-footer .footer-container .footer-contact p:hover
+{
+    color: #B348D2;
+}
+#pnp-footer .footer-container .footer-contact span
+{
+    margin: 10px 20px;
+    margin-left: 0px;
+    font-size: 30px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #B348D2;  
+    cursor: pointer;
+}
+#pnp-footer .footer-container .footer-contact i:hover
+{
+    color: #B348D2;
+    transition: 0.6s;
+
+}
+#pnp-footer .footer-container img
+{
+    width: 150px;
+}
+/* =============== End: footer ===============  */
